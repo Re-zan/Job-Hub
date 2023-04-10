@@ -2,28 +2,34 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="bg-gradient-to-r from-[#7e90fe0d] to-[#9873ff0d]">
       <nav className="my_conatiner justify-between items-center  pt-12 pb-10 md:flex">
-        <Link to="/">
-          <div className=" text-[#1A1919]  text-3xl md:text-base lg:text-3xl font-bold pl-4 md:pl-0 pb-3 md:pb-0 flex justify-between">
-            <h2>JOB-HUB</h2>
-            <div onClick={() => setIsOpen(!isOpen)}>
-              <span>
-                {isOpen === true ? (
-                  <XMarkIcon className="h-6 w-6  text-[#9873FF] md:hidden mr-3" />
-                ) : (
-                  <Bars3Icon className="h-6 w-6  text-[#9873FF] md:hidden mr-3" />
-                )}
-              </span>
+        <div className="headeing flex justify-between">
+          <Link to="/">
+            <div className=" text-[#1A1919]  text-3xl md:text-base lg:text-3xl font-bold pl-4 md:pl-0 pb-3 md:pb-0 ">
+              <h2>JOB-HUB</h2>
             </div>
+          </Link>
+          <div
+            className="md:hidden mr-3 md:mr-0"
+            onClick={() => setOpen(!open)}
+          >
+            <span>
+              {open === true ? (
+                <XMarkIcon className=" h-10 w-8  text-[#9873FF] md:hidden  mr-3" />
+              ) : (
+                <Bars3Icon className=" h-10 w-8  text-[#9873FF] " />
+              )}
+            </span>
           </div>
-        </Link>
+        </div>
 
         <ul
           className={` md:flex px-6 items-center absolute md:static transition ease-in-out duration-500 ${
-            isOpen
+            open
               ? " top-24 z-10  bg-[#acb4e8] text-white text-center  w-full py-7"
               : " -top-56 "
           }`}
@@ -72,7 +78,7 @@ const Header = () => {
             <li className="py-3 md:px-7">Blog</li>
           </NavLink>
 
-          <button className={`md:hidde bttn ${isOpen ? " " : " hidden"}`}>
+          <button className={`md:hidde bttn ${open ? " " : " hidden"}`}>
             Start Applying
           </button>
         </ul>
