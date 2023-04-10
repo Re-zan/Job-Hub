@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "assingment": 1,
+    "marks": 60
+  },
+  {
+    "id": 2,
+    "assingment": 2,
+    "marks": 60
+  },
+  {
+    "id": 3,
+    "assingment": 3,
+    "marks": 49
+  },
+  {
+    "id": 4,
+    "assingment": 4,
+    "marks": 53
+  },
+  {
+    "id": 5,
+    "assingment": 5,
+    "marks": 60
+  },
+  {
+    "id": 6,
+    "assingment": 6,
+    "marks": 60
+  },
+  {
+    "id": 7,
+    "assingment": 7,
+    "marks": 60
+  },
+  {
+    "id": 8,
+    "assingment": 8,
+    "marks": 60
+  }
+]

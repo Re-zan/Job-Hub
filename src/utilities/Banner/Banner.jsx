@@ -4,7 +4,7 @@ import Vector2 from "../../assets/images/banner/Vector.png";
 
 const Banner = (props) => {
   return (
-    <div className="bg-gradient-to-r from-[#7e90fe0d] to-[#9873ff0d]">
+    <div className="bg-gradient-to-r from-[#7e90fe0d] to-[#9873ff0d] z-10">
       <div className="my_conatiner text-center  py-28">
         <img
           src={Vector1}

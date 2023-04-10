@@ -5,7 +5,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-gradient-to-r from-[#7e90fe0d] to-[#9873ff0d]">
+    <div className="bg-gradient-to-r from-[#7e90fe0d] to-[#9873ff0d] ">
       <nav className="my_conatiner justify-between items-center  pt-12 pb-10 md:flex">
         <div className="headeing flex justify-between">
           <Link to="/">
@@ -14,7 +14,7 @@ const Header = () => {
             </div>
           </Link>
           <div
-            className="md:hidden mr-3 md:mr-0"
+            className="md:hidden mr-3 md:mr-0 z-40"
             onClick={() => setOpen(!open)}
           >
             <span>
