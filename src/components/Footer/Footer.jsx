@@ -10,11 +10,11 @@ const Footer = () => {
       <div className="my_conatiner   pb-10  grid grid-cols-1 md:grid-cols-2 pl-14 lg:pl-0 lg:grid-cols-7  text-white gap-10 lg:gap-28 ">
         <div className="  col-span-1 lg:col-span-2 ">
           <h2 className="text-3xl">JOB-HUB</h2>
-          <p className="text-[#ffffffb3] pt-4  pr-3">
+          <p className="text-[#ffffffb3] pt-4  pr-3 text-sm">
             There are many variations of passages of Lorem Ipsum , but the
             majority have suffered alteration in some form.
           </p>
-          <div className=" pt-4 flex">
+          <div className=" pt-6 flex">
             <Link to="https://www.facebook.com/">
               <img
                 src={fb}
