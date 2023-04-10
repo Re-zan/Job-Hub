@@ -1,9 +1,10 @@
 import React from "react";
+import Banner from "../../utilities/Banner/Banner";
 
 const Blog = () => {
   return (
     <div>
-      <h3>Blog, page</h3>
+      <Banner title="All Blogs Are Here"></Banner>
     </div>
   );
 };

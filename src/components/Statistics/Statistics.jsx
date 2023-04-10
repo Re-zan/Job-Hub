@@ -1,9 +1,10 @@
 import React from "react";
+import Banner from "../../utilities/Banner/Banner";
 
 const Statistics = () => {
   return (
     <div>
-      <h3>Statistics, this page</h3>
+      <Banner title="Assignment Mark Chart"></Banner>
     </div>
   );
 };
