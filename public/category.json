@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "logo": "./Icons/accounts 1.png",
-    "name": "Account & Finance",
+    "image": "./Icons/accounts 1.png",
+    "job_name": "Account & Finance",
     "jobs": 300
   },
   {
     "id": 2,
-    "logo": "./Icons/business 1.png",
-    "name": "Creative Design",
+    "image": "./Icons/business 1.png",
+    "job_name": "Creative Design",
     "jobs": 100
   },
   {
     "id": 3,
-    "logo": "./Icons/social-media 1.png",
-    "name": "Marketing & Sales",
+    "image": "./Icons/social-media 1.png",
+    "job_name": "Marketing & Sales",
     "jobs": 150
   },
   {
     "id": 4,
-    "logo": "./Icons/chip 1.png",
-    "name": "Engineering Job",
+    "image": "./Icons/chip 1.png",
+    "job_name": "Engineering Job",
     "jobs": 300
   }
 ]

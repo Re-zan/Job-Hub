@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import AllCatdata from "../AllCatdata/AllCatdata";
 import Heading from "../../utilities/Heading/Heading";
 
 const JObCat = () => {
-  const getData = useLoaderData();
+  const [getData, setGetData] = useState([]);
+  useEffect(() => {
+    fetch("category.json")
+      .then((res) => res.json())
+      .then((data) => setGetData(data));
+  }, []);
 
   return (
     <div className="my_conatiner my-32">
