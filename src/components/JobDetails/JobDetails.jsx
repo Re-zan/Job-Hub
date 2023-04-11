@@ -23,6 +23,7 @@ const JobDetails = () => {
             Job Description:{" "}
             <span className="text-[#757575] font-normal">{data.desp}</span>
           </p>
+
           <p className="text-[#1A1919] font-bold py-6">
             Job Responsibility:{" "}
             <span className="text-[#757575] font-normal">
@@ -48,6 +49,7 @@ const JobDetails = () => {
                 {data.salary} (Per Month)
               </span>
             </p>
+            <br></br>
             <p className="text-[#1A1919] font-bold inline-flex gap-2">
               <img src={Frame1} alt="" /> Job Title:{" "}
               <span className="text-[#757575] font-normal">{data.title}</span>

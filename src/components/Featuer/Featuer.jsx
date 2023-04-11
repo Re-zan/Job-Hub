@@ -13,7 +13,7 @@ const Featuer = () => {
         content="Explore thousands of job opportunities with all the information you need. Its your future"
       ></Heading>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-7 pt-8 mb-14">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-9 pt-8 mb-14">
         {all ? (
           <>
             {datas.slice(0, 4).map((data) => (
