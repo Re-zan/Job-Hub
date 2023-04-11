@@ -21,7 +21,7 @@ const Blog = () => {
         <hr className="my-8" />
         <h2 className=" font-semibold text-2xl py-6">What is a custom hook?</h2>
         <p>
-          Ans: Custom hook isn't a building react hook. A react developer makes
+          Ans: Custom hook isn't a build-in react hook. A react developer makes
           coustom hook. What a coustom hook will return and the arguments are
           decided by the react developer. A custom React JS hook is created by
           using the ‘use’ prefix. For eg, a custom hook can be named
@@ -33,7 +33,7 @@ const Blog = () => {
         <p>
           Ans: useRef is a built-in React hook. It has two parameter one is
           inital value another one returns a object which contains current
-          value. If we need get a valu from useRef then we have write
+          value. If we need get a value from useRef then we have to write
           .current.For eg data.current. We can use it instead of useSate. It is
           mutable when data do re-rendering. Because the value of the reference
           is persisted. It reduces codes. It is a synchronous function. It can
