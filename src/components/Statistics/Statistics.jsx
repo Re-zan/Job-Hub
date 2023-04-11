@@ -16,7 +16,7 @@ const Statistics = () => {
     <div>
       <Banner title="Assignment Mark Chart"></Banner>
       <div className="my_conatiner my-32">
-        <ResponsiveContainer width="100%" height={500}>
+        <ResponsiveContainer width="100%" height={450}>
           <AreaChart
             width={500}
             height={200}
@@ -30,12 +30,12 @@ const Statistics = () => {
             }}
           >
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="marks" />
+            <XAxis dataKey="assingment" />
             <YAxis />
             <Tooltip />
             <Area
               type="monotone"
-              dataKey="assingment"
+              dataKey="marks"
               stroke="#8884d8"
               fill="#8884d8"
             />
