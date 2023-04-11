@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className=" bg-[#1A1919]  py-8 md:py-16 lg:py-32">
+    <div className=" bg-[#1A1919]  py-8 md:py-16 lg:pt-36 lg:pb-20">
       <div className="my_conatiner   pb-10  grid grid-cols-1 md:grid-cols-2 pl-14 lg:pl-0 lg:grid-cols-7  text-white gap-10 lg:gap-28 ">
         <div className="  col-span-1 lg:col-span-2 ">
           <h2 className="text-3xl">JOB-HUB</h2>
