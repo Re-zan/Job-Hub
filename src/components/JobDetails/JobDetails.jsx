@@ -18,7 +18,7 @@ const JobDetails = () => {
     <div>
       <Banner title="Job Details"></Banner>
       <div className="my_conatiner grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 py-36 gap-8">
-        <div className="text-base">
+        <div className="text-base px-5 lg:px-0">
           <p className="text-[#1A1919] font-bold py-6  ">
             Job Description:{" "}
             <span className="text-[#757575] font-normal">{data.desp}</span>
