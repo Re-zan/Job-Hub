@@ -10,11 +10,13 @@ const ShowAppJob = (props) => {
         <img
           src={logo}
           alt={title}
-          className="bg-[#F4F4F4] py-24 px-12 mx-auto"
+          className="bg-[#F4F4F4] py-24 px-12 mx-auto object-cover w-52 rounded-lg"
         />
 
         <div className="text_cont flex-grow ml-7">
-          <h2>{title}</h2>
+          <h2 className=" text-[#474747] font-bold pt-8 pb-2 text-2xl">
+            {title}
+          </h2>
           <p className=" text-[#757575] text-base pb-6">{name}</p>
           <div className=" inline-flex gap-3 mb-4">
             <button className="text_color rounded-lg border py-2 px-5  font-semibold ">
