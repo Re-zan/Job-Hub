@@ -12,6 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 const JobDetails = () => {
   const { id } = useParams();
   const [details, setDetails] = useState(useLoaderData);
+
   const data = details.find((job) => job.id == id);
 
   const applyBtn = (id) => {
