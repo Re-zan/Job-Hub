@@ -7,7 +7,7 @@ const JobData = (props) => {
 
   return (
     <div>
-      <div className="rounded-lg border p-10 transition duration-300 transform  hover:border-purple-400  hover:shadow-lg">
+      <div className="rounded-lg border p-10 transition duration-300 transform  hover:border-purple-400  hover:shadow-lg  ">
         <img
           src={logo}
           alt={title}
@@ -16,10 +16,10 @@ const JobData = (props) => {
         <h2 className=" text-[#474747] font-bold pt-8 pb-2">{title}</h2>
         <p className=" text-[#757575] text-base pb-6">{name}</p>
         <div className=" inline-flex gap-3 mb-4">
-          <button className="text_color rounded-lg border py-2 px-5  font-semibold ">
+          <button className="text_color rounded-lg border-purple-500 border py-2 px-5  font-semibold ">
             {type}
           </button>{" "}
-          <button className="text_color rounded-lg border py-2 px-5  font-semibold ">
+          <button className="text_color rounded-lg border-purple-500 border py-2 px-5  font-semibold ">
             {time}
           </button>
         </div>
@@ -31,7 +31,7 @@ const JobData = (props) => {
         </div>
 
         <Link to={`jobdetails/${id}`} state={title}>
-          <button className="bttn py-3 px-5">View Details</button>
+          <button className="bttn py-3 px-5 ">View Details</button>
         </Link>
       </div>
     </div>

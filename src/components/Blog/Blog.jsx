@@ -6,7 +6,7 @@ const Blog = () => {
     <div>
       <Banner title="All Blogs Are Here"></Banner>
 
-      <div className="my_conatiner bg-gradient-to-r from-[#7e90fe0d] to-[#9873ff0d] my-11 border-[bg-gradient-to-r from-[#7E90FE] to-[#9873FF]] p-24">
+      <div className="my_conatiner bg-gradient-to-r from-[#7e90fe0d] to-[#9873ff0d] my-11 border-[bg-gradient-to-r from-[#7E90FE] to-[#9873FF]] p-3 md:p-24">
         <h2 className=" font-semibold text-2xl py-6">
           When should you use context API?
         </h2>

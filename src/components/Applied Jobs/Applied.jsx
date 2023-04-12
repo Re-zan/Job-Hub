@@ -31,8 +31,8 @@ const Applied = () => {
       <Banner title="Applied Jobs Details"></Banner>
 
       <div className="my_conatiner my-16 ">
-        <div className="flex  justify-end gap-5  mr-32">
-          <button className="bttn" onClick={Onsite}>
+        <div className="  lg:flex items-end  justify-end gap-5 mr-0  ml-7 lg:ml-0  lg:mr-32">
+          <button className="bttn mr-4" onClick={Onsite}>
             {" "}
             Onsite
           </button>

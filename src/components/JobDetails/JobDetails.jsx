@@ -19,9 +19,10 @@ const JobDetails = () => {
     const storted = getData();
     const quantiy = storted[id];
     if (quantiy) {
-      toast("You are already applied for this job");
+      toast.error("You are already applied for this job");
     } else {
       addData(id);
+      toast("You apply for this job is sucessfully added ");
     }
   };
 
@@ -30,19 +31,19 @@ const JobDetails = () => {
       <Banner title="Job Details"></Banner>
       <div className="my_conatiner grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 py-36 gap-8">
         <div className="text-base px-5 lg:px-0">
-          <p className="text-[#1A1919] font-bold py-6  ">
+          <p className="text-[#1A1919] font-bold py-6  transition ease-in-out duration-500 hover:bg-[#845df00d]  hover:p-6 hover:text-[14px]">
             Job Description:{" "}
             <span className="text-[#757575] font-normal">{data.desp}</span>
           </p>
 
-          <p className="text-[#1A1919] font-bold py-6">
+          <p className="text-[#1A1919] font-bold py-6 transition ease-in-out duration-500 hover:bg-[#845df00d]  hover:p-6 hover:text-[14px] hover:mb-8">
             Job Responsibility:{" "}
             <span className="text-[#757575] font-normal">
               {data.responsibility}
             </span>
           </p>
 
-          <h3 className="text-[#1A1919] font-bold pb-4">
+          <h3 className="text-[#1A1919] font-bold py-6">
             Educational Requirements:
           </h3>
           <p className="text-[#757575] font-normal">{data.educational}</p>
@@ -56,14 +57,16 @@ const JobDetails = () => {
             <hr></hr>
             <p className="text-[#1A1919] font-bold py-6 inline-flex gap-2">
               <img src={Frame} alt="" /> Salary:{" "}
-              <span className="text-[#757575] font-normal">
+              <span className="text-[#757575] font-normal hover:text-purple-800">
                 {data.salary} (Per Month)
               </span>
             </p>
             <br></br>
             <p className="text-[#1A1919] font-bold inline-flex gap-2">
               <img src={Frame1} alt="" /> Job Title:{" "}
-              <span className="text-[#757575] font-normal">{data.title}</span>
+              <span className="text-[#757575] font-normal hover:text-purple-800">
+                {data.title}
+              </span>
             </p>
 
             <hr className="my-4"></hr>
@@ -74,21 +77,27 @@ const JobDetails = () => {
             <hr></hr>
             <p className="text-[#1A1919] font-bold py-6 inline-flex gap-2">
               <img src={Frame2} alt="" /> Phone:{" "}
-              <span className="text-[#757575] font-normal">{data.phone}</span>
+              <span className="text-[#757575] font-normal hover:text-purple-800">
+                {data.phone}
+              </span>
             </p>
             <div>
               <p className="text-[#1A1919] font-bold inline-flex gap-2">
                 <img src={Frame3} alt="" /> Email:{" "}
-                <span className="text-[#757575] font-normal">{data.email}</span>
+                <span className="text-[#757575] font-normal hover:text-purple-800">
+                  {data.email}
+                </span>
               </p>
             </div>
 
             <p className="text-[#1A1919] font-bold py-6 inline-flex gap-2">
               <img src={Frame4} alt="" /> Address:{" "}
-              <span className="text-[#757575] font-normal">{data.add}</span>
+              <span className="text-[#757575] font-normal hover:text-purple-800">
+                {data.add}
+              </span>
             </p>
 
-            <hr className="my-4"></hr>
+            <hr className="my-4 "></hr>
           </div>
 
           <button className="bttn w-full my-5" onClick={() => applyBtn(id)}>
