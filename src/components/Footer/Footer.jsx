@@ -43,13 +43,13 @@ const Footer = () => {
         <div>
           <h2 className="text-2xl">Company</h2>
           <ul className="pt-4 text-[#ffffffb3]">
-            <li className="py-2 transtion ease-in-out duration-200 hover:translate-x-3 hover:text-purple-400 text-sm">
+            <li className="py-2 transtion ease-in-out duration-500 hover:translate-x-2 hover:text-purple-400 text-sm">
               About US
             </li>
-            <li className="py-2 transtion ease-in-out duration-200 hover:translate-x-3 hover:text-purple-400 text-sm">
+            <li className="py-2 transtion ease-in-out duration-500 hover:translate-x-2 hover:text-purple-400 text-sm">
               Work
             </li>
-            <li className="py-2 transtion ease-in-out duration-200 hover:translate-x-3 hover:text-purple-400  text-sm">
+            <li className="py-2 transtion ease-in-out duration-500 hover:translate-x-2 hover:text-purple-400  text-sm">
               Latest News
             </li>
             <li className="py-2 transtion ease-in-out duration-200 hover:translate-x-3 hover:text-purple-400  text-sm">

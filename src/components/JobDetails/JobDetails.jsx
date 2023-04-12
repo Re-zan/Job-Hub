@@ -6,13 +6,23 @@ import Frame1 from "../../assets/images/Icons/Frame-1.png";
 import Frame2 from "../../assets/images/Icons/Frame-2.png";
 import Frame3 from "../../assets/images/Icons/Frame-3.png";
 import Frame4 from "../../assets/images/Icons/Location Icon.png";
-
+import { addData, getData } from "../../utilities/DataLoclStroe/DataStore";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const JobDetails = () => {
   const { id } = useParams();
-
   const [details, setDetails] = useState(useLoaderData);
-
   const data = details.find((job) => job.id == id);
+
+  const applyBtn = (id) => {
+    const storted = getData();
+    const quantiy = storted[id];
+    if (quantiy) {
+      toast("You are already applied for this job");
+    } else {
+      addData(id);
+    }
+  };
 
   return (
     <div>
@@ -57,7 +67,7 @@ const JobDetails = () => {
 
             <hr className="my-4"></hr>
 
-            <h3 className="text-[#1A1919] font-bold pb-4">
+            <h3 className="text-[#1A1919] font-bold pb-4 my-3">
               Contact Information:
             </h3>
             <hr></hr>
@@ -80,7 +90,11 @@ const JobDetails = () => {
             <hr className="my-4"></hr>
           </div>
 
-          <button className="bttn w-full my-5"> Apply Now</button>
+          <button className="bttn w-full my-5" onClick={() => applyBtn(id)}>
+            {" "}
+            Apply Now
+          </button>
+          <ToastContainer />
         </div>
       </div>
     </div>
